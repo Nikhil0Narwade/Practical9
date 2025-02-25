@@ -75,7 +75,7 @@ class Practical9
                   Start+=System.nanoTime();
                factorial = number * getPerformanceOfFact2(number-1);
                    End+=System.nanoTime();
-                if(number==10) System.out.println("Average Performance Time to calculate factorial using 'RECURSSION' of "+number+" i.e "+factorial+" is: "+(End-Start)+"\n");
+                if(number==5) System.out.println("Average Performance Time to calculate factorial using 'RECURSSION' of "+number+" i.e "+factorial+" is: "+(End-Start)+"\n");
             return factorial;
       }
       
@@ -87,7 +87,7 @@ class Practical9
                   for(int i=0;i<size;i++){
                         Start+=System.nanoTime();
                               //test+=Long.toString(System.nanoTime());
-                              test+=System.nanoTime();
+                              test+=System.nanoTime()%30+1;
                                     //test+=String.valueOf(System.nanoTime());
                                           End+=System.nanoTime();
                         }
@@ -102,7 +102,7 @@ class Practical9
                         for(int i=0;i<size;i++){
                         Start+=System.nanoTime();
                               //test.append(Long.toString(System.nanoTime()));
-                              test.append(System.nanoTime());
+                              test.append(System.nanoTime()%30+1);
                         //test.append(String.valueOf(System.nanoTime()));
                               End+=System.nanoTime();
             }
@@ -118,7 +118,7 @@ class Practical9
                         for(int i=0;i<size;i++){
                         Start+=System.nanoTime();
                               //test.append(Long.toString(System.nanoTime()));
-                        test.append(System.nanoTime());
+                        test.append(System.nanoTime()%30+1);
                   //test.append(String.valueOf(System.nanoTime()));
                         End+=System.nanoTime();
             }
